@@ -20,6 +20,7 @@ To fully functional of theme you should add site variables:
 * **google_analytics**: Javascript tracking code.
 * **header_image**: Remote or local image URL i.e. /themes/Vapor-Rigter/assets/img/rigter.png
 * **twitter_account**: Twitter username, i.e. Rigter or @Rigter ;)
+* **facebook_og_image**: Facebook og:image i.e. /themes/Vapor-Rigter/assets/img/rigter.png
 
 Preview
 -------

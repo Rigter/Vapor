@@ -10,7 +10,7 @@
               </header>
               <section class="post-excerpt">
                   <?php echo article_markdown(); ?>
-                  <p class="readmore"><a href="<?php echo full_url(article_url()); ?>">Leer este artículo <i class="fa fa-chevron-circle-right"></i></a></p>
+                  <p class="readmore"><a href="<?php echo full_url(article_url()); ?>">Read this article <i class="fa fa-chevron-circle-right"></i></a></p>
               </section>
           </article>
         <?php endwhile; ?>
