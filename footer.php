@@ -9,7 +9,7 @@
     </footer>
 	
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url(theme_url('/assets/js/index.js')); ?>"></script>
+    <script type="text/javascript" src="<?php echo theme_url('/assets/js/index.js'); ?>"></script>
 
 </body>
 </html>

@@ -11,10 +11,10 @@
     <meta name="description" content="<?php echo site_description(); ?>">
     <title><?php echo page_title('Page can’t be found'); ?> - <?php echo site_name(); ?></title>
     <?php vapor_metatags(); ?>
-    <link rel="stylesheet" href="<?php echo full_url(theme_url('/assets/css/normalize.css')); ?>">
-    <link rel="stylesheet" href="<?php echo full_url(theme_url('/assets/css/screen.css')); ?>">
+    <link rel="stylesheet" href="<?php echo theme_url('/assets/css/normalize.css'); ?>">
+    <link rel="stylesheet" href="<?php echo theme_url('/assets/css/screen.css'); ?>">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
-    <link rel="shortcut icon" href="<?php echo full_url(theme_url('/assets/img/favicon.png')); ?>">
+    <link rel="shortcut icon" href="<?php echo theme_url('/assets/img/favicon.png'); ?>">
     <?php if(customised()): ?>
     <!-- Custom CSS -->
     <style><?php echo article_css(); ?></style>
@@ -23,11 +23,11 @@
     <?php endif; ?>
 </head>
 <body class="<?php echo body_class(); ?>">
-    
+
     <?php vapor_google_analytics() ?>
 
     <header id="site-head">
-        <a id="blog-logo" href="<?php echo full_url(); ?>"><div class="bloglogo" style="background: url(<?php echo vapor_header_image_url(); ?>)"></div></a>
+        <a id="blog-logo" href="<?php echo full_url(); ?>"><div class="bloglogo" style="background: url(<?php echo theme_url('/assets/img/vapor_logo.png'); ?>)"></div></a>
         <h1 class="blog-title"><a href="<?php echo full_url(); ?>"><?php echo site_name(); ?></a></h1>
         <h2 class="blog-description"><?php echo site_description(); ?></h2>
 
@@ -37,4 +37,3 @@
         </nav>
     <?php endif; ?>
     </header>
-    
