@@ -16,18 +16,19 @@
 
             <section class="share">
                 <p class="info prompt">Share this post</p>
-                <a href="http://twitter.com/share?text=<?php echo article_title(); ?>&url=<?php echo full_url(article_url()); ?>"
+                <a href="http://twitter.com/share?text=<?php echo article_title(); ?>&url=<?php echo full_url(current_url()); ?>"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span>
                 </a>
-                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo full_url(article_url()); ?>"
+                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo full_url(current_url()); ?>"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <i class="fa fa-2x fa-fw fa-facebook-square"></i> <span class="hidden">Facebook</span>
                 </a>
-                <a href="https://plus.google.com/share?url=<?php echo full_url(article_url()); ?>"
+                <a href="https://plus.google.com/share?url=<?php echo full_url(current_url()); ?>"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <i class="fa fa-2x fa-fw fa-google-plus-square"></i> <span class="hidden">Google+</span>
                 </a>
+                <!-- <?php echo full_url(current_url()); echo "-----"; echo article_url(); ?> -->
             </section>
 
             <footer class="post-footer">
