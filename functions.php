@@ -175,5 +175,8 @@ function vapor_posts_next() {
     }else{
     	return NULL;
     }
-  
+ 
+
+
+
 }

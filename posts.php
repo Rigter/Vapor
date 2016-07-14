@@ -1,15 +1,27 @@
 <?php theme_include('header'); ?>
 
     <main class="content" role="main">
+<?php
+// function article_excerpt($limit = 140, $suffix = '&hellip;') {
+//     //  Get the article HTML to check
+//   $content = article_description();
+//   $len = strlen($content);
 
-    	<?php if(has_posts()): while(posts()): ?>
+//   if($len < $limit) {
+//     return $content;
+//   }
+
+//   return strpos($content, 0, $limit) . $suffix;
+// }
+?>
+      <?php if(has_posts()): while(posts()): ?>
           <article class="preview">
               <header>
                   <h1 class="post-title"><a href="<?php echo article_url(); ?>"><?php echo article_title(); ?></a></h1>
                   <div class="post-meta"><time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time></div>
               </header>
               <section class="post-excerpt">
-                  <?php echo article_markdown(); ?>
+                  <?php echo article_description(); ?>
                   <p class="readmore"><a href="<?php echo article_url(); ?>">Read this article <i class="fa fa-chevron-circle-right"></i></a></p>
               </section>
           </article>

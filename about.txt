@@ -1,5 +1,5 @@
 Theme name:    Vapor
 Description:   Minimal and responsive with a focus on typography. Vapor is a theme that embodies the core concept of Ghost—it fades into the background, bringing the focus to your content. 
-Author name:   Seth Lilly - Ported by Rigter
-Author site:   http://visualidiot.com
+Author name:   Seth Lilly - Ported by Rigter and modified by redrails
+Author site:   http://visualidiot.com, http://ihtasham.com
 License:       http://licence.visualidiot.com
