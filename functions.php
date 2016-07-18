@@ -143,7 +143,7 @@ function vapor_posts_prev() {
     }
 
     if($offset!=''){
-    	return '<a class="newer-posts" href="'.full_url($url).'"><i class="fa fa-chevron-circle-left"></i> Older</a>';
+    	return '<a class="newer-posts" href="'.$url.'"><i class="fa fa-chevron-circle-left"></i> Older</a>';
     }else{
     	return NULL;
     }
@@ -171,9 +171,12 @@ function vapor_posts_next() {
     }
 
     if($offset!=''){
-    	return '<a class="older-posts" href="'.full_url($url).'">Newer <i class="fa fa-chevron-circle-right"></i></a>';
+    	return '<a class="older-posts" href="'.$url.'">Newer <i class="fa fa-chevron-circle-right"></i></a>';
     }else{
     	return NULL;
     }
-  
+ 
+
+
+
 }
